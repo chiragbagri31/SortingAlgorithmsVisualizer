@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<title>Visualization</title>
+
+		<!-- Bootstrap CDN -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+		<!-- Owl-carousel CDN -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha256-UhQQ4fxEeABh4JrcmAJ1+16id/1dnlOEVCFOxDef9Lw=" crossorigin="anonymous" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha256-kksNxjDRxd/5+jGurZUJd1sdR2v+ClrCl3svESBaJqw=" crossorigin="anonymous" />
+
+		<!-- font awesome icons -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    	
+    	<!-- Custom CSS -->
+		<link rel="stylesheet" href="index.css">
+	</head>
+
+	<body>
+		<header>
+			<a href="#">SORTING ALGORITHMS VISUALIZER</a>
+		</header>
+
+		<nav>
+			<a href=#>Home</a> &nbsp; &nbsp; &nbsp;
+
+			<a href="index.html">Visualization</a> &nbsp; &nbsp; &nbsp;
+
+			<a href=#>About Sorting Algorithms Visualizer</a>
+		</nav>
+
+		<div id="sorting" class="flex-container"></div>
+
+		<div class="col range-input" id="input-panel">
+            <span id="size" class = "label" style="margin-left:300px; margin-right:20px;">Size
+                <input id ="size_input" type="range" value=50 min="1" max="100" style="margin-left: 60px;">
+            </span>
+            <span id="speed" class = "label">Speed
+                <input id="speed_input" type="range" min="20" max="300" value=60 style="margin-left: 60px;">
+            </span>
+        </div>
+
+        <div class="SortingButtons">
+            <button type="button" class="btn bubbleSort">Bubble Sort</button>
+            <button type="button" class="btn selectionSort">Selection Sort</button>
+            <button type="button" class="btn insertionSort">Insertion Sort</button>
+            <button type="button" class="btn quickSort">Quick Sort</button>
+            <button type="button" class="btn mergeSort">Merge Sort</button>
+        </div>
+
+        <div class="StartStopButtons">
+            <button type="button" class="btn bubbleSort new" style="margin-left:502px;">New Array</button>
+            <button type="button" class="btn selectionSort stop" style="margin-left:69px;" disabled="true">Stop Sorting</button>
+        </div>
+
+        <!-- Custom JavaScript files -->
+		<script src="SortingBars.js" async defer></script>
+
+	    <script src="bubbleSort.js" async defer></script>
+
+	    <script src="mergeSort.js" async defer></script>
+
+	    <script src="selectionSort.js" async defer></script>
+
+	    <script src="quickSort.js" async defer></script>
+
+	    <script src="insertionSort.js" async defer></script>
+	    
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+		<footer>
+			<div>
+				&copy; 2021 Sorting Algorithm Visualizer&nbsp;<span>|</span> design by chirag bagri
+			</div>
+		</footer>
+	</body>
+</html>
